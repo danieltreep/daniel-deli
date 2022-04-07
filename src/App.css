@@ -1,38 +1,158 @@
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  background-color: #FFF6C8;
+}
+.main {
+  display: grid;
+  margin: 0 auto;
+  padding: 0 0 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px 10px;
+  width: 86%;
+  justify-items: center;
+}
+header {
+  /* position: fixed;
+  z-index: 10;
+  overflow: hidden; */
+}
+h1 {
+  margin: 0;
+  padding: 4rem 0 3rem;
+  font-size: 64px;
+}
+.grid {
+  width: calc(100% - 10px);
+  height: calc(40vw - 10px);
+}
+.input {
+  width: calc(100% - 10px);
+  height: 2.5em;
+  padding: 0 .5rem;
+  font-size: 1rem;
+}
+.border {
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.itemCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 0 0 0;
+  position: relative;
+}
+.item {
+  padding: .5rem 0 0;
+}
+.price {
+  width: 60%;
+  background-color: #E9D2FF;
+}
+.addCartSvg {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Filter*/
+.filterButton:hover,
+.cross:hover {
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.filterButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filter {
+  font-size: 1rem;
+  background-color: white;
+  padding: 0 .5rem 0 0;
+  border: none;
+}
+.filterMenu {
+  grid-column-start: span 2;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+  padding-left: .5rem;
+  height: 0px;
+  opacity: 0;
+  transition: height 1s ease, opacity .5s ease;
+}
+.filterMenuShow {
+  height: 58px;
+  opacity: 1;
+}
+.filterTerm {
+  padding: 0 .5rem .5rem 0;
+}
+.filterTerm label {
+  padding-left: .3rem;
+}
+.filterArrow {
+  transition: 1s;
+}
+.filterArrowRotate {
+  transform: rotate(-180deg);
+}
+/* Popup */
+.popup {
+  background-color: #DCFDFF;
+  border-top: 5px solid black;
+  height: 200px;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  transition: 1s;
+  padding: 1rem 0 0;
+}
+.popupGone {
+  bottom: -200px;
+  position: fixed;
+}
+.popupButton {
+  border: none;
+  padding: .3rem;
+  background-color: white;
+  margin: 0;
+  font-size: 1rem;
+}
+.popupOption {
+  width: calc(100% - 5px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.p {
+  margin: 0;
+  padding: .3rem;
+  font-size: 1rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: black;
+}
+.cross {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+.arrow {
+  margin-left: .5rem;
+}
+.plusminus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
 }
