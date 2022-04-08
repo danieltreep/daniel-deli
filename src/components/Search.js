@@ -7,6 +7,7 @@ export default function Search(props) {
             placeholder={'Search...'} 
             className={"border input"} 
             onChange={(e) => props.search(e.target.value)}
+            onKeyDown={props.handleSearch()}
         />
     ) 
 }

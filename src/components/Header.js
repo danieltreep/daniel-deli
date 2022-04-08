@@ -18,13 +18,13 @@ export default function Header(props) {
             filterArrow.classList.remove("filterArrowRotate");
         }
     }
-
+    
     return (
         <header>
-            <h1>{props.searchTerm}</h1>
+            <h1>SHOP</h1>
             <div className='main'>
             <FilterButton show={handleShowFilter}/>
-            <Search search={props.search}/>
+            <Search search={props.search} handleSearch={props.handleSearch}/>
             <FilterMenu />
             </div>
         </header>

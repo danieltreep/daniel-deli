@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
 .App {
   text-align: center;
   background-color: #FFF6C8;
+  min-height: 100vh;
 }
 .main {
   display: grid;
@@ -167,4 +167,10 @@ a {
 }
 .backwardButton {
   background-color: #FFC1C1;
+}
+input {
+  outline: none;
+}
+.hide {
+  display: none;
 }
