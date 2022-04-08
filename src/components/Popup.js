@@ -11,7 +11,7 @@ export default function Popup(props) {
   }
 
   return (
-    <div className="popup">
+    <div className="popup popupGone">
       <div className='main'>
         <svg onClick={handleExit} className="cross" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
           <line x1="2" y1="13.3245" x2="12.3245" y2="3" stroke="black" strokeWidth="4" strokeLinecap="round"/>
@@ -24,7 +24,7 @@ export default function Popup(props) {
           handleSubtract={props.handleSubtract}
         />
         <div className='popupOption'>
-          <div className='border popupOption'>
+          <div className='border popupOption priceButton'>
             <p className='p'>Price: ${Number.parseFloat(props.price).toFixed(2)}</p>
           </div>
           <AddCartButton />

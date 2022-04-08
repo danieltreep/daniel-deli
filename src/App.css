@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 .App {
   text-align: center;
   background-color: #FFF6C8;
@@ -120,9 +121,8 @@ h1 {
 }
 .popupButton {
   border: none;
-  padding: .3rem;
-  background-color: white;
-  margin: 0;
+  padding: .1rem;
+  background-color: transparent;
   font-size: 1rem;
 }
 .popupOption {
@@ -155,4 +155,16 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 80%;
+}
+.priceButton {
+  background-color: #F5FF88;
+}
+.addCartButton {
+  background-color: #FFDE88;
+}
+.forwardButton {
+  background-color: #99FF88;
+}
+.backwardButton {
+  background-color: #FFC1C1;
 }

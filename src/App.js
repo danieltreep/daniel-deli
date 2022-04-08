@@ -1,19 +1,18 @@
+import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
-// import { useState } from 'react';
 import data from './data';
 
 function App() {
 
-  // const [cart, setCart] = useState([])
-
   const { products } = data; 
+  const [search, setSearch] = useState("");
 
   return (
     <div className="App">
-      <Header />
-      <Main products={products}/>
+      <Header search={setSearch} searchTerm={search}/>
+      <Main products={products} searchTerm={search}/>
     </div>
   );
 }

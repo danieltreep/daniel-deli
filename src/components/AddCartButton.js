@@ -3,7 +3,7 @@ import React from "react";
 export default function AddCartButton() {
 
     return (
-        <div className='border popupOption'>
+        <div className='border popupOption addCartButton'>
             <button className='popupButton'>
               <a href="#home">Add to Cart</a>
               <div>

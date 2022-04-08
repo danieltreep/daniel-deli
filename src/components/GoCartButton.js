@@ -3,7 +3,7 @@ import React from "react";
 export default function GoCartButton() {
 
     return (
-      <div className='border popupOption'>
+      <div className='border popupOption forwardButton'>
         <button className='popupButton'>
           <a href="#home">Go to Cart</a>
           <svg className="arrow" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -29,6 +29,7 @@ export default function Main(props) {
 
     // Change popup to new product and reset price and count
     function handlePopup(product) {
+        document.querySelector(".popup").classList.remove("popupGone");
         setPopupProduct(product);
         setPrice(product.price);
         setCount(1);

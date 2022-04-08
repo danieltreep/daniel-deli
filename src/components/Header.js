@@ -3,7 +3,7 @@ import FilterButton from './FilterButton';
 import FilterMenu from './FilterMenu';
 import Search from './Search';
 
-export default function Header() {
+export default function Header(props) {
 
     function handleShowFilter(show) {
 
@@ -21,10 +21,10 @@ export default function Header() {
 
     return (
         <header>
-            <h1>SHOP</h1>
+            <h1>{props.searchTerm}</h1>
             <div className='main'>
             <FilterButton show={handleShowFilter}/>
-            <Search />
+            <Search search={props.search}/>
             <FilterMenu />
             </div>
         </header>
