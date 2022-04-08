@@ -24,7 +24,7 @@ export default function Header(props) {
             <h1>SHOP</h1>
             <div className='main'>
             <FilterButton show={handleShowFilter}/>
-            <Search search={props.search} handleSearch={props.handleSearch}/>
+            <Search search={props.search} />
             <FilterMenu />
             </div>
         </header>

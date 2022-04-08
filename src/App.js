@@ -9,13 +9,15 @@ function App() {
   const { products } = data; 
   const [search, setSearch] = useState(null);
 
-  function handleSearch() {
+  function handleSearch(searchTerm) {
+    setSearch(searchTerm);
+
     const itemCards = document.querySelectorAll('.itemCard');
 
     for (let i = 0; i < products.length; i++) {
       itemCards[i].classList.add("hide");
 
-      if (products[i].name.toUpperCase().includes(search.toUpperCase())) {
+      if (products[i].name.toUpperCase().includes(searchTerm.toUpperCase())) {
         itemCards[i].classList.remove("hide");
       } 
   }
@@ -23,8 +25,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header search={setSearch} handleSearch={handleSearch}/>
-      <Main products={products} searchTerm={search}/>
+      <Header search={handleSearch} />
+      <Main products={products} />
     </div>
   );
 }
