@@ -2,6 +2,7 @@ const data = {
     products: [
         {
             id: 1,
+            amount: 1,
             name: "Apple",
             price: 0.25,
             keywords: ["fruit", "apple"],
@@ -16,6 +17,7 @@ const data = {
         },
         {
             id: 2,
+            amount: 1,
             name: "Milk",
             price: 1.45,
             keywords: ["dairy", "drink", "milk"],
@@ -38,6 +40,7 @@ const data = {
         },
         {
             id: 3,
+            amount: 1,
             name: "Burger",
             price: 9.75,
             keywords: ["burger", "fastfood"],
@@ -59,6 +62,7 @@ const data = {
         },
         {
             id: 4,
+            amount: 1,
             name: "Juice",
             price: 3.25,
             keywords: ["fruit", "drink", "juice"],
@@ -72,6 +76,7 @@ const data = {
         },
         {
             id: 5,
+            amount: 1,
             name: "Fries",
             price: 4.99,
             keywords: ["fries", "fastfood"],
@@ -89,6 +94,7 @@ const data = {
         },
         {
             id: 6,
+            amount: 1,
             name: "Eggs",
             price: 2.39,
             keywords: ["eggs", "dairy"],
@@ -102,6 +108,7 @@ const data = {
         },
         {
             id: 7,
+            amount: 1,
             name: "Carrot",
             price: 0.45,
             keywords: ["vegetable", "carrot"],
@@ -120,6 +127,7 @@ const data = {
         },
         {
             id: 8,
+            amount: 1,
             name: "Fish",
             price: 3.95,
             keywords: ["fish", "animal"],
