@@ -9,9 +9,10 @@ export default function Search(props) {
 
     return (
         <input 
+        
             type={'text'} 
             placeholder={'Search...'} 
-            className={"border input"} 
+            className={"border input search"} 
             onClick={closePopup}
             onChange={(e) => props.search(e.target.value)}
         />

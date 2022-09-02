@@ -28,16 +28,6 @@ export default function FilterMenu() {
                 <label htmlFor={"fish"}>Fish</label>    
             </div>
             
-            <div className='filterTerm'>
-                <input type={"checkbox"} id={"drinks"}></input>
-                <label htmlFor={"drinks"}>Drinks</label> 
-            </div>
-            
-            <div className='filterTerm'>
-                <input type={"checkbox"} id={"fish"}></input>
-                <label htmlFor={"fish"}>Fish</label>
-            </div>
-            
         </div>
         
 

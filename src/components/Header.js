@@ -1,24 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FilterButton from './FilterButton';
-import FilterMenu from './FilterMenu';
+// import FilterButton from './FilterButton';
+// import FilterMenu from './FilterMenu';
 import Search from './Search';
 
 export default function Header(props) {
 
-    function handleShowFilter(show) {
+    // function handleShowFilter(show) {
 
-        const filterMenu = document.querySelector(".filterMenu");
-        const filterArrow = document.querySelector(".filterArrow");
+    //     const filterMenu = document.querySelector(".filterMenu");
+    //     const filterArrow = document.querySelector(".filterArrow");
 
-        if (!show) {
-            filterMenu.classList.add("filterMenuShow");
-            filterArrow.classList.add("filterArrowRotate");
-        } else {
-            filterMenu.classList.remove("filterMenuShow");
-            filterArrow.classList.remove("filterArrowRotate");
-        }
-    }
+    //     if (!show) {
+    //         filterMenu.classList.add("filterMenuShow");
+    //         filterArrow.classList.add("filterArrowRotate");
+    //     } else {
+    //         filterMenu.classList.remove("filterMenuShow");
+    //         filterArrow.classList.remove("filterArrowRotate");
+    //     }
+    // }
     
     return (
         <header>
@@ -38,10 +38,10 @@ export default function Header(props) {
                 </Link>
             </div>
             
-            <div className='main'>
-            <FilterButton show={handleShowFilter}/>
+            <div className='headerMenu'>
+            {/* <FilterButton show={handleShowFilter}/> */}
             <Search search={props.search} />
-            <FilterMenu />
+            {/* <FilterMenu /> */}
             </div>
         </header>
     ) 
