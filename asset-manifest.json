@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/daniel-deli/static/css/main.f890e7e1.css",
+    "main.js": "/daniel-deli/static/js/main.1b0f60b1.js",
+    "static/js/787.2f54b0e6.chunk.js": "/daniel-deli/static/js/787.2f54b0e6.chunk.js",
+    "index.html": "/daniel-deli/index.html",
+    "main.f890e7e1.css.map": "/daniel-deli/static/css/main.f890e7e1.css.map",
+    "main.1b0f60b1.js.map": "/daniel-deli/static/js/main.1b0f60b1.js.map",
+    "787.2f54b0e6.chunk.js.map": "/daniel-deli/static/js/787.2f54b0e6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f890e7e1.css",
+    "static/js/main.1b0f60b1.js"
+  ]
+}
